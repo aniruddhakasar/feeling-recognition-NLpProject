@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align = "center" id = 'cls'>
+        <form action="{{ url_for('predict') }}" method='post' id="formm" >
+            <h2>feelling Recognition system. 🥰</h2>
+            <h3>type your name</h3>
+            <input type="text" name="name">
+            <h3>type your text</h3>
+            <textarea name="text" id="com1" cols="30" rows="10"></textarea> <br><br>
+            <button type="submit">clik me</button>
+
+            <h1>your feelling is : {{prediction}}</h1>
+        </form>
+    </div>
+
+
+    <style>
+        * {
+                    margin:0px;
+                    padding:0px;
+                }
+                body{
+                    font-family: sans-serif;
+                    background-color: aqua;
+                    align-content: center;
+                    margin-top: 200px;
+                }
+        
+        /* #cls {
+                    color:rgb(80, 78, 77);
+                
+                    background-color: rgb(202, 173, 231);
+                } */
+    </style>
+    
+</body>
+</html>
